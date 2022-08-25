@@ -1,2 +1,5 @@
 ---
 # tasks file for myrole.setup
+- import_tasks: pre.yml
+- import_tasks: setup.yml
+- import_tasks: post.yml

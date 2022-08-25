@@ -1,0 +1,12 @@
+---
+# tasks file for myrole.setup
+- name: Test variables are OK
+  ansible.builtin.assert:
+    that:
+      - cust_num is defined
+      - cust_num is number
+      - cust_name is defined
+      - cust_name is string
+    fail_msg: |
+      cust_num: {{ cust_num | d() }}
+      cust_name: {{ cust_name | d() }}

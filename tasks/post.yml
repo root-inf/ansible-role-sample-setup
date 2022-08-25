@@ -1,0 +1,11 @@
+---
+# tasks file for myrole.setup
+- name: show variables
+  ansible.builtin.debug:
+    msg: |
+      cust_num: {{ cust_num }}
+      cust_name: {{ cust_name }}
+
+- name: show facts
+  ansible.builtin.debug:
+    var: ret_setup
