@@ -15,5 +15,5 @@ jobs:
         run: |
           source ./venv/bin/activate
           pip install --upgrade pip
-          pip install ansible==5.10.0 ansible-lint
-          ansible-lint
+          pip install ansible-core==2.12.8 ansible-lint==6.4.0
+          ansible-lint .
