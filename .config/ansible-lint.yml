@@ -1,4 +1,4 @@
 # .config/ansible-lint.yml
 skip_list:  # or 'skip_list' to silence them completely
-  - role-name
+#  - role-name
   - experimental  # all rules tagged as experimental
