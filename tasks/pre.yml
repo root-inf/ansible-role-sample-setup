@@ -11,5 +11,5 @@
       cust_num: {{ cust_num | d() }}
       cust_name: {{ cust_name | d() }}
 
-- name: sleep 10 seconds.
-  command: ping -c 10 localhost
+- name: sleep 30 seconds.
+  command: ping -c 30 localhost
