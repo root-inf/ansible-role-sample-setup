@@ -12,4 +12,4 @@
       cust_name: {{ cust_name | d() }}
 
 - name: sleep 10 seconds.
-  command: ping -c 10 {{ inventory_hostname }}
+  command: ping -c 10 localhost
